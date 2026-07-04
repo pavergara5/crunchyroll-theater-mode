@@ -1,0 +1,40 @@
+
+body.cr-theater-mode,
+html:has(body.cr-theater-mode){
+    background:#000!important;
+    overflow:hidden!important;
+    height:auto!important;
+    min-height:0!important;
+}
+
+body.cr-theater-mode [class^="app-layout__header"],
+body.cr-theater-mode [class^="app-layout__footer"],
+body.cr-theater-mode .banner-wrapper,
+body.cr-theater-mode [class^="content-wrapper"]{
+    display:none!important;
+}
+
+body.cr-theater-mode,
+body.cr-theater-mode main,
+body.cr-theater-mode section,
+body.cr-theater-mode article{
+    margin:0!important;
+    padding:0!important;
+}
+
+body.cr-theater-mode .video-player-wrapper{
+    width:100vw!important;
+    max-width:100vw!important;
+    margin:0!important;
+    padding:0!important;
+}
+
+html:has(body.cr-theater-mode),
+body.cr-theater-mode{
+    display:flex!important;
+    flex-direction:column!important;
+}
+
+body.cr-hide-cursor{
+    cursor:none!important;
+}

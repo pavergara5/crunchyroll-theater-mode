@@ -1,0 +1,1 @@
+Load unpacked in chrome://extensions after enabling Developer Mode.

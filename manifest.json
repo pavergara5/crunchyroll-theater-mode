@@ -1,0 +1,10 @@
+{
+  "manifest_version":3,
+  "name":"Crunchyroll Theater Mode",
+  "version":"2.0",
+  "permissions":["storage","tabs"],
+  "host_permissions":["https://www.crunchyroll.com/*"],
+  "action":{"default_popup":"popup.html"},
+  "background":{"service_worker":"background.js"},
+  "content_scripts":[{"matches":["https://www.crunchyroll.com/*"],"js":["content.js"],"css":["styles.css"]}]
+}
