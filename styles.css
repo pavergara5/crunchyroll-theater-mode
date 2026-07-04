@@ -3,13 +3,22 @@ body.cr-theater-mode,
 html:has(body.cr-theater-mode){
     background:#000!important;
     overflow:hidden!important;
-    height:auto!important;
     min-height:0!important;
+    height:100%!important;
+    padding:0!important;
+}
+
+body.cr-theater-mode .erc-watch-episode,
+body.cr-theater-mode .erc-watch-episode-layout,
+body.cr-theater-mode .video-player-wrapper{
+    height: 100%!important;
+    padding: 0!important;
 }
 
 body.cr-theater-mode [class^="app-layout__header"],
 body.cr-theater-mode [class^="app-layout__footer"],
 body.cr-theater-mode .banner-wrapper,
+body.cr-theater-mode #onetrust-consent-sdk,
 body.cr-theater-mode [class^="content-wrapper"]{
     display:none!important;
 }
@@ -37,4 +46,8 @@ body.cr-theater-mode{
 
 body.cr-hide-cursor{
     cursor:none!important;
+}
+
+body.cr-hide-cursor #onetrust-consent-sdk{
+    display:none!important;
 }
